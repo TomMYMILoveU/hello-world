@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>18计科的第一个网页</title>
+    <!--页面元素初始化的样式加载-->
+    <link type="text/css" rel="stylesheet" href="templates/style/normalize.css">
+    <link type="text/css" rel="stylesheet" href="templates/style/layout.css">
+</head>
+<body>
+<!--html的注释语句
+PC端的html标签，四大共同属性：
+title：鼠标移动到元素上会展示的文本信息;
+style：内联样式定义，可以直接写css，优先级最高！
+id：id选择符
+class：class选择符
+-->
+
+<header class="pageHeader w1200 clearFix">
+    <div class="logoWrap">
+        <img src="templates/image/logo.png" alt="南昌大学logo" title="鼠标移动上来你就看的到我">
+    </div>
+    <div class="quickLinksWrap">
+        <div class="qLink1">
+            <ul class="qLink1Ul clearFix">
+                <li class="qLink1Li"><a href="#">邮箱</a></li>
+                <li class="qLink1Li"><a href="#">OA系统</a></li>
+                <li class="qLink1Li"><a href="#">English</a></li>
+            </ul>
+        </div>
+        <div class="qLink2">
+            <ul class="qLink2Ul clearFix">
+                <li class="qLink2Li qLinkIco_1"><a href="#">考生</a></li>
+                <li class="qLink2Li qLinkIco_2"><a href="#">在校生</a></li>
+                <li class="qLink2Li qLinkIco_3"><a href="#">教职工</a></li>
+                <li class="qLink2Li qLinkIco_4"><a href="#">校友</a></li>
+                <li class="qLink2Li qLinkIco_5"><a href="#">访客</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="pageNav w1200 clearFix">
+    <nav class="navWrap">
+        <ul class="navUl clearFix">
+            <li class="navLi"><a href="#">首页</a></li>
+            <li class="navLi"><a href="#">学校概况</a></li>
+            <li class="navLi"><a href="#">学院与学科</a></li>
+            <li class="navLi"><a href="#">职能部门</a></li>
+            <li class="navLi"><a href="#">人才培养</a></li>
+            <li class="navLi"><a href="#">科学研究</a></li>
+            <li class="navLi"><a href="#">招生就业</a></li>
+            <li class="navLi"><a href="#">管理与服务</a></li>
+        </ul>
+    </nav>
+    <div class="searchWrap">
+        <form class="searchForm">
+            <input type="text" name="keywords">
+            <button type="button">搜索</button>
+        </form>
+    </div>
+</div>
+<div class="focusNewsList w1200 clearFix">
+    <div class="focus"><img src="templates/image/focus.png" alt="焦点图"></div>
+    <div class="mainNewsList">
+        <div class="tit">学校新闻</div>
+        <ul class="newsListUl">
+            <li class="newsListLi iconRedPoint"><a href="#">奏响春天的乐章</a></li>
+            <li class="newsListLi iconRedPoint"><a href="#">【评论】拼争出来的成就最感人</a></li>
+            <li class="newsListLi iconRedPoint"><a href="#">这里是新闻标题</a></li>
+            <li class="newsListLi iconRedPoint"><a href="#">这里是新闻标题</a></li>
+            <li class="newsListLi iconRedPoint"><a href="#">这里是新闻标题</a></li>
+            <li class="newsListLi iconRedPoint"><a href="#">这里是新闻标题</a></li>
+            <li class="newsListLi iconRedPoint"><a href="#">这里是新闻标题</a></li>
+        </ul>
+        <div class="more"><a href="#">更多 &gt;</a></div>
+    </div>
+</div>
+<div class="newsListTopic w1200 clearFix">
+    <div class="newsList clearFix">
+        <div class="event">
+            <div class="tit">学校活动</div>
+            <div class="more"><a href="#">更多 &gt;</a></div>
+            <ul class="eventUl">
+                <li class="eventLi">
+                    <a class="clearFix" href="#">
+                        <span class="datetime">
+                            <span class="month">Dec</span>
+                            <span class="date">20</span>
+                        </span>
+                        <span class="info">
+                            <span class="infoTxt">活动标题活动标题活动标题活动标题活动标题</span>
+                            <span class="infoTxt icoDatetime">2019/04/06 16:00:00</span>
+                            <span class="infoTxt icoLocal">前湖校区文法楼A306</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="eventLi">
+                    <a class="clearFix" href="#">
+                        <span class="datetime">
+                            <span class="month">Dec</span>
+                            <span class="date">20</span>
+                        </span>
+                        <span class="info">
+                            <span class="infoTxt">活动标题活动标题活动标题活动标题活动标题</span>
+                            <span class="infoTxt icoDatetime">2019/04/06 16:00:00</span>
+                            <span class="infoTxt icoLocal">前湖校区文法楼A306</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="notice">
+            <div class="tit">学校公告</div>
+            <ul class="newsListUl">
+                <li class="newsListLi"><a href="#">这里是新闻标题这里是新闻标题这里是新闻标题这里是新闻标题这里是新闻标题</a></li>
+                <li class="newsListLi"><a href="#">这里是新闻标题</a></li>
+                <li class="newsListLi"><a href="#">这里是新闻标题</a></li>
+                <li class="newsListLi"><a href="#">这里是新闻标题</a></li>
+                <li class="newsListLi"><a href="#">这里是新闻标题</a></li>
+            </ul>
+            <div class="more"><a href="#">更多 &gt;</a></div>
+        </div>
+    </div>
+    <div class="topic">
+        <ul class="topicUl">
+            <li class="topicLi"><a href="#"><img src="templates/image/topic1.png" alt="党的十九大精神专题网"></a></li>
+            <li class="topicLi"><a href="#"><img src="templates/image/topic2.png" alt="2018年作风建设专题网"></a></li>
+        </ul>
+        <div class="more"><a href="#">更多 &gt;</a></div>
+    </div>
+</div>
+<div class="links w1200 clearFix">
+    <div class="cellLinks clearFix">
+        <div class="clelinks">
+            <div class="clo1 ">
+                <div class="c1 thebook"></div>
+                <div class="c2"><a href="#">图书馆</a></div>
+            </div>
+            <div class="clo2 ">
+                <div class="d1 phone"></div>
+                <div class="d2"><a href="#">南大手机客户端</a></div>
+            </div>
+            <div class="clo3">
+                <div class="e1 qiz"></div>
+                <div class="e2"><a href="#">党风廉政建设系统</a></div>
+            </div>
+        </div>
+        <div class="ocrlinks">
+            <div class="cre1">
+                <div class="f1 person"></div>
+                <div class="f2"><a href="#">个人门户</a></div>
+            </div>
+            <div class="cre2">
+                <div class="g1 film"></div>
+                <div class="g2"><a href="#">影视南大</a></div>
+            </div>
+            <div class="cre3">
+                <div class="h1 goal"></div>
+                <div class="h2"><a href="#">招标采购管理系统</a></div>
+            </div>
+        </div>
+        <div class="modlinks">
+            <div class="otc1">
+                <div class="q1 move"></div>
+                <div class="q2"><a href="#">校内公共服务、办公电话</a></div>
+            </div>
+            <div class="otc2">
+                <div class="w1 singal"></div>
+                <div class="w2"><a href="#">信息公开</a></div>
+            </div>
+            <div class="otc3">
+                <div class="p1 two"></div>
+                <div class="p2"><a href="#">“双千计划”申报系统</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="otherLinks clearFix ">
+        <div class="tit">快速通道</div>
+        <div class="grade">
+            <div class="no-one"><a href="#">部省合建</a></div>
+            <div class="no-two"><a href="#">教务在线</a></div>
+            <div class="no-three"><a href="#">团学时空</a></div>
+            <div class="no-four"><a href="#">家园网</a></div>
+            <div class="no-five"><a href="#">研究生网</a></div>
+        </div>
+        <div class="tit">友情链接</div>
+        <div class="first">
+            <div class="opp"><a href="#">教育部</a></div>
+            <div class="opi"><a href="#">科学技术部</a></div>
+            <div class="opu"><a href="#">江西省教育厅</a></div>
+        </div>
+        <div class="second">
+            <div class="yao"><a href="#">江西省科学技术厅</a></div>
+            <div class="yai"><a href="#">中西部大学联盟网</a></div>
+        </div>
+        <div class="third"><a href="#">全国九所地方综合性大学协作单位</a></div>
+    </div>
+</div>
+<footer class="pageFooter w1200">
+    <div class="kong"></div>
+    <div class="foot">
+        <ul class="lovUl">
+            <li class="lovLi"><a href="#">地理位置</a></li>
+            <li class="lovLi"><a href="#">网站地图</a></li>
+            <li class="lovLi"><a href="#">创作团队</a></li>
+            <li class="lovLi"><a href="#">意见反馈</a></li>
+        </ul>
+    </div>
+    <div class="ftyst"></div>
+    <div class="feet"><a>Copyright (c) 2014 Nanchang University.All Rights Reserved. 赣B2-20050168号/网备36010802000198号 360网站安全检测平台</a></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,622 @@
+/*
+css语法的注释！
+选择符{
+属性1:值;
+属性2:值;
+}
+*/
+/*
+20190320
+1、块级元素和内联元素的概念
+2、float（浮动）属性的应用，及其注意事项（要对父容器清空浮动）
+3、margin（外边距）属性的应用，以及取值原则
+4、css的组合应用
+
+css优先级的原则就是所处理元素越多的选择符优先级越低！
+*/
+
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.pageHeader {
+    height: 88px;
+}
+
+.logoWrap {
+    width: 240px;
+    height: 87px;
+    float: left;
+    margin: 1px 0 0 4px;
+}
+
+.quickLinksWrap {
+    width: 320px;
+    height: 88px;
+    float: right;
+}
+
+.qLink1 {
+    height: 20px;
+}
+
+.qLink1Ul {
+    margin: 0 0 0 110px;
+    width: 210px;
+    height: 20px;
+}
+
+.qLink1Li {
+    width: 70px;
+    height: 20px;
+    float: left;
+    text-align: right; /*文本对齐方式*/
+    color: #f00;
+}
+
+/*
+子项选择操作：父选择符>直接子选择符
+包含选择操作：父选择符 所有所包含的子选择符
+*/
+.qLink1Li > a {
+    color: #666666;
+    font-size: 12px;
+}
+
+/*文本的样式控制，由它最接近的元素来完成处理！*/
+
+.qLink2 {
+    height: 68px;
+}
+
+.qLink2Ul {
+
+}
+
+.qLink2Li {
+    width: 64px;
+    height: 68px;
+    float: left;
+    text-align: center;
+    background-position: 19px 22px; /**数值定位，先x轴，再y轴**/
+    /*
+    背景图像的方向值定位
+    左上：left top，中上：center top，右上：right top
+    左中：left center，中中：center，右中：right center
+    左下：left bottom，中下：center bottom，右下：right bottom
+    */
+    background-repeat: no-repeat; /*背景图片不重复*/
+}
+
+.qLinkIco_1 {
+    background-image: url("../image/ico_navLink1.png");
+}
+
+.qLinkIco_2 {
+    background-image: url("../image/ico_navLink2.png");
+}
+
+.qLinkIco_3 {
+    background-image: url("../image/ico_navLink3.png");
+}
+
+.qLinkIco_4 {
+    background-image: url("../image/ico_navLink4.png");
+}
+
+.qLinkIco_5 {
+    background-image: url("../image/ico_navLink5.png");
+}
+
+.qLink2Li > a {
+    font-size: 12px;
+    color: #143270;
+}
+
+.pageNav {
+    height: 47px;
+    background: #143270;
+}
+
+.navWrap {
+    width: 800px;
+    height: 47px;
+    float: left;
+    margin: 0 20px 0 50px;
+}
+
+.navUl {
+}
+
+/*
+单行文本在容器中垂直居中，只需要把行高和高度设置成一致即可
+*/
+.navLi {
+    width: 100px;
+    height: 47px;
+    line-height: 47px; /*行高属性*/
+    float: left;
+    text-align: center;
+}
+
+.navLi > a {
+    color: #fff;
+    display: block;
+}
+
+.navLi > a:hover {
+    color: #143270;
+    background-color: #fff;
+    text-decoration: underline;
+}
+
+.searchWrap {
+    width: 300px;
+    height: 47px;
+    float: left;
+}
+
+.searchForm {
+    text-align: right;
+    display: block;
+    padding: 8px 0 0 0;
+}
+
+.searchForm input, .searchForm button {
+    height: 30px;
+    padding: 0;
+    border: none;
+    font-size: 12px;
+}
+
+.searchForm input {
+    background-color: #e8e8e8;
+}
+
+.searchForm button {
+    background-color: #9d7702;
+    color: #fff;
+    padding: 0 5px;
+}
+
+.focusNewsList {
+    margin-top: 20px;
+    margin-bottom: 21px;
+    height: 282px;
+}
+
+.newsListTopic {
+    height: 221px;
+    margin: 0 auto 10px;
+    position: relative;
+}
+
+.links {
+    height: 256px;
+}
+
+.focus, .newsList, .cellLinks, .mainNewsList, .topic, .otherLinks {
+    float: left;
+}
+
+.focus, .newsList, .cellLinks {
+    width: 816px;
+}
+
+.topic, .otherLinks {
+    width: 384px;
+}
+
+.focus, .mainNewsList {
+    height: 282px;
+}
+
+.mainNewsList {
+    width: 348px;
+    margin-left: 36px;
+    position: relative;
+}
+
+.tit {
+    font-size: 20px;
+    font-weight: bold;
+    color: #143270;
+    height: 32px;
+    line-height: 32px;
+}
+
+.newsListUl {
+
+}
+
+.newsListLi {
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+}
+
+.more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 14px;
+    line-height: 14px;
+}
+
+.more > a {
+    color: #143270;
+    font-size: 14px;
+}
+
+.iconRedPoint {
+    background-image: url("../image/ico_redpoint.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 0 0 0 5px;
+}
+
+.newsListLi > a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #404040;
+}
+
+.iconRedPoint > a {
+    color: #143270;
+}
+
+.newsList, .topic {
+    height: 221px;
+}
+.cellLinks {
+    background-color: #ffffff;
+}
+.cellLinks, .otherLinks {
+    height: 256px;
+}
+.clelinks,.ocrlinks ,.modlinks {
+    height:256px;
+    width:272px;
+    float:left;
+    position:relative;
+}
+
+.clo1,.clo2,.clo3,.cre1,.cre2,.cre3,.otc1,.otc2,.otc3{
+    width:245px;
+    height:50px;
+}
+.clo1{
+    background: #2d3e50;
+}
+.c1,.p1,.p2,.c2,.d1,.d2,.e1,.e2,.f1,.f2,.g1,.g2,.h1,.w1,.w2,.h2,.q1,.q2{
+    height:50px;
+    float:left;
+    position:relative;
+}
+.c1,.p1,.d1,.e1,.f1,.g1,.h1,.q1,.w1{
+    width: 65px;
+}
+.c2,.d2,.e2,.f2,.g2,.h2,.w2,.q2,.p2{
+    width: 179px;
+
+}
+.c2 > a ,.d2 > a,.e2 > a,.h2>a,.q2>a, .f2 > a,.g2 > a,.w2>a,.p2>a{
+     color:#fff;
+     line-height: 50px;
+     display:block;
+ }
+.c2 >a:hover {
+    text-decoration: underline ;
+}
+.d2 >a:hover {
+    text-decoration: underline;
+}
+.e2 >a:hover {
+    text-decoration: underline;
+}
+.h2 >a:hover {
+    text-decoration: underline;
+}
+.q2 >a:hover {
+    text-decoration: underline;
+}
+.f2 >a:hover {
+    text-decoration: underline;
+}
+.g2 >a:hover {
+    text-decoration: underline;
+}
+.w2 >a:hover {
+    text-decoration: underline;
+}
+.p2 >a:hover {
+    text-decoration: underline;
+}
+.thebook{
+    background-image: url("../image/tushu.png");
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.phone{
+    background-image: url("../image/shouji.png");
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.qiz{
+    background-image: url("../image/qi.png");
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.person{
+    background-image: url("../image/geren.png");
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.film{
+    background-image: url("../image/yinshi.png");
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.goal{
+    background-image: url("../image/zhaobiao.png");
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.move{
+    background-image: url("../image/dianhua.png ");
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.two{
+    background-image: url("../image/qian.png ");
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.singal{
+    background-image: url("../image/xinxi.png ");
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+.clo2{
+    margin-top:40px;
+    background: #8d44ad;
+}
+
+.clo3{
+    margin-top:40px;
+    background: #c1092d;
+}
+.cre2,.cre3,.otc2,.otc3{
+    margin-top:40px;
+}
+.cre1{
+    background: #e67f22;
+}
+.cre2{
+    background:#297fb8;
+}
+.cre3{
+    background:#c1392b;
+}
+.otc1{
+    background: #038d73;
+}
+.otc2{
+    background: #09f;
+}
+.otc3{
+    background: #689b00;
+}
+.ocrlinks{
+
+}
+.newsList {
+}
+
+.event, .notice {
+    width: 408px;
+    height: 221px;
+    float: left;
+    position: relative;
+}
+
+.event {
+}
+
+.eventUl {
+
+}
+
+.eventLi {
+    width: 300px;
+    height: 52px;
+    margin: 10px 0 20px 0;
+}
+
+.eventLi > a {
+    display: block;
+}
+
+.datetime, .info {
+    display: block;
+    height: 52px;
+    float: left;
+}
+
+.datetime {
+    width: 60px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.month {
+    background-color: #143270;
+    height: 26px;
+    line-height: 26px;
+    display: block;
+    color: #fff;
+}
+
+.date {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    color: #143270;
+    border: 1px solid #cdcdcd;
+    border-top: none;
+}
+
+.info {
+    width: 220px;
+    padding: 0 0 0 20px;
+}
+
+.infoTxt {
+    height: 17px;
+    line-height: 17px;
+    color: #000;
+    font-size: 14px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.icoDatetime, .icoLocal {
+    color: #7c7c7c;
+    background-repeat:no-repeat ;
+    background-position: left center;
+    padding: 0 0 0 15px;
+}
+
+.icoDatetime {
+    background-image: url("../image/ico_time.png");
+}
+
+.icoLocal {
+    background-image: url("../image/ico_local.png");
+}
+
+
+.notice {
+}
+
+.topic {
+    position: relative;
+}
+
+.topicUl{
+    width: 324px;
+    margin: 32px auto 0;
+}
+
+.topicLi{
+    width: 348px;
+    height: 78px;
+}
+.otherLinks {
+    background-color: #fff;
+}
+.grade{
+    height:56px;
+}
+.first{
+    height:45px;
+}
+.third{
+    width: 348px;
+    height:46px;
+}
+.third>a{
+    font-size: 15px;
+    color: #000;
+    line-height: 46px;
+}
+.no-four {
+    width: 65px;
+    height: 56px;
+    float: left;
+}
+.no-one>a,.no-two>a,.no-three>a,.no-five>a,.no-four>a{
+    font-size: 15px;
+    color: #000;
+    line-height: 56px;
+}
+.no-one,.no-two,.no-three,.no-five{
+    width:75px;
+    height: 56px;
+    float: left;
+}
+.opp,.opi,.opu{
+    float:left;
+    height:45px;
+}
+.opp>a,.opi>a,.opu>a{
+    font-size:15px;
+    color:#000;
+    line-height:45px;
+}
+.opp{
+    width: 56px;
+}
+.opu{
+    width:90px;
+}
+.opi{
+    width: 84px;
+}
+.second{
+    height:19px;
+}
+.yao,.yai{
+    width:127px;
+    height:19px;
+    float:left;
+}
+.yao>a,.yai>a{
+    font-size:15px;
+    color:black;
+    line-height: 19px;
+}
+.pageFooter {
+    height: 119px;
+    background: #143270;
+}
+.kong{
+    height:22px;
+}
+.foot{
+    height:48px;
+    float:left;
+    margin: 0 0 0 420px;
+}
+.lovUl{
+
+}
+.lovLi{
+    float:left;
+    height:48px;
+    width:92px;
+}
+.lovLi>a{
+    color: #fff;
+    line-height: 48px;
+    font-size: 12px;
+}
+.ftyst{
+    height:50px;
+}
+.feet{
+    height:20px;
+    margin-left: 200px;
+}
+.feet>a{
+    color: #fff;
+    font-size:12px;
+    line-height: 20px;
+}
